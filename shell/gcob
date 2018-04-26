@@ -6,7 +6,7 @@ echo "Enter jira number: "
 
 read jira_num
 
-echo "Enter branch description: "
+echo "Enter branch description (Letters and numbers only): "
 
 read description
 
