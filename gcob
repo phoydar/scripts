@@ -1,0 +1,17 @@
+#!/bin/bash
+# Git branch creator
+prefix="psh"
+
+echo "Enter jira number: "
+
+read jira_num
+
+echo "Enter branch description: "
+
+read description
+
+description=`echo "$description" | tr '[:upper:]' '[:lower:]'`
+
+branch="${prefix}__sl-${jira_num}__${description// /-}"
+
+eval "$(git checkout -b ${branch})"
