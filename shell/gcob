@@ -7,7 +7,7 @@ echo "Enter jira number: "
 
 read jira_num
 
-echo "Enter branch description (Letters and numbers only): "
+echo "Enter branch description (Only use allowed git branch characters): "
 
 read description
 
